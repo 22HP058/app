@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitStart"
+                android:src="@drawable/map" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/state_background1"
+                android:gravity="center"
+                android:text="정류장1"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/tram_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/state_background2"
+                android:gravity="center"
+                android:text="트램 정차 중"
+                android:textSize="24sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+
+
+<!--
+
+<a href="https://www.flaticon.com/kr/free-icons/" title="플레이 아이콘">플레이 아이콘  제작자: Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/kr/free-icons/" title="중지 아이콘">중지 아이콘  제작자: Debi Alpa Nugraha - Flaticon</a>
+-->
